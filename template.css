@@ -227,12 +227,18 @@ footer p a {
   height: 80px;
   width: 40px;
 }
-.ladenicoon {
+.divladenicoon{
   position: absolute;
+  width: 100%;
   top: 80vh;
+}
+.ladenicoon {
   margin-top: -80px;
-  left: -10%;
-  animation: leftright 5s ease infinite;
+  position: absolute;
+  left: 0%;
+
+  animation: leftright 5s ease-in-out infinite;
+
 }
 
 .clearfix:after {
@@ -242,9 +248,15 @@ footer p a {
 }
 @keyframes leftright{
   0% {
-    left: -10%;
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    left: 110%;
+    margin-left:-40px;
+    left: 100%;
+    opacity: 0;
   }
 }
