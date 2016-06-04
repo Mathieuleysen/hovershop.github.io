@@ -2,20 +2,25 @@ function main() {
     var homenav = document.getElementById("homenavhtml");
     var boardsnav = document.getElementById("boardsnavhtml");
     var contactnav = document.getElementById("contactnavhtml");
-    
+    var appnav = document.getElementById("appnavhtml");
+
     homenav.onclick= function(){
-        test('S0'); 
+        test('S0');
         return false;
     }
     boardsnav.onclick= function(){
-        test('S1'); 
+        test('S1');
         return false;
     }
     contactnav.onclick= function(){
-        test('S3'); 
+        test('S3');
         return false;
     }
-    
+    appnav.onclick = function () {
+        test('S4')
+        return false;
+    }
+
     function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
     var diff = to - document.body.scrollTop;
@@ -41,8 +46,8 @@ function main() {
             scrollTo(dest.offsetTop, 500);
           }
 }
-    
-    
+
+
 }
 
 window.onload = function() {
