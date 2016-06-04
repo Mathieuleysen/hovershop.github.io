@@ -1,6 +1,14 @@
 @font-face{
     font-family: latoLight;
-    src: url(font/Lato-Thin.ttf)
+    src: url(font/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: latoMedium;
+  src: url(font/Lato-Medium.ttf);
+}
+@font-face {
+  font-family: latoLightItalic;
+  src: url(font/Lato-LightItalic.ttf);
 }
 
 body {
@@ -24,6 +32,7 @@ h3 {
 h4 {
     text-align: center;
     font-size: 1.5em;
+    font-family: latoLight;
     font-weight: 600;
 }
 u{
@@ -56,10 +65,10 @@ u{
     margin-top: 10px;
     margin-left: 10px;
 }
- 
-#stickynav #nav { 
+
+#stickynav #nav {
     position: fixed;
-    z-index: 9999; 
+    z-index: 9999;
     right: 0;
     margin-top: 10px;
     margin-right: 20px;
@@ -76,7 +85,7 @@ u{
   color: white;
   text-decoration: none;
 }
-#stickynav #nav li a:hover { 
+#stickynav #nav li a:hover {
   text-decoration: none;
 }
 
@@ -97,11 +106,11 @@ u{
     background-position: center center;
 }
 .text-intro {
-    font-family: latoLight;
+    font-family: latoLightItalic;
     font-size: 4em;
     color: white;
     margin-top: 25vh;
-    margin-left: 5vw; 
+    margin-left: 5vw;
     position: absolute;
 }
 
@@ -139,11 +148,11 @@ u{
     text-align: center;
 }
 .inner-col {
-    float: left;    
+    float: left;
 }
 
 .inner-col:nth-child(2),.inner-col:nth-child(3) {
-    padding-left: 10vw;    
+    padding-left: 10vw;
 }
 
 .inner-col img{
@@ -155,18 +164,18 @@ u{
 }
 
 .h4-width{
-    width: 700px;
+    width: 900px;
     margin: 0 auto;
 }
 .sizeText{
     font-size: 1.5em;
     font-weight: 600;
-    
+
 }
 
 .overlaymaps {
-   background:transparent; 
-   position:relative; 
+   background:transparent;
+   position:relative;
    width:100%;
    height:500px;
    top:500px;
@@ -186,8 +195,16 @@ u{
 .spacerbottom{
     margin-bottom: 50px;
 }
-
-
+.groot {
+  font-size: 2em;
+}
+.kleurgeel {
+  color: rgba(208, 198, 101, 1);
+}
+.kaart {
+  width: 100%;
+  height: 800px;
+}
 footer {
     height: 30px;
     width: 100%;
